@@ -85,12 +85,25 @@ body {
 header.topbar {
     background: var(--secondary);
     color: var(--pure);
-    font-family: "Raleway-semibold"
+    font-family: "Raleway-semibold";
+    padding: 0.75rem 0;
+}
+
+header.topbar .icons a {
+    margin-right: 0.6rem;
+}
+
+header.topbar .auth .divider {
+    padding: 0 1rem;
 }
 
 header.topbar .auth>div a {
     color: var(--pure);
     text-decoration: none;
+}
+
+header.topbar .auth>div img {
+    margin-right: 0.35rem;
 }
 
 header.topbar .container {
@@ -99,11 +112,8 @@ header.topbar .container {
     align-items: center;
 }
 
-header.topbar .container .auth {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
+/* utility class */
 
 .flex {
     display: flex;
@@ -111,4 +121,12 @@ header.topbar .container .auth {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.item-center {
+    align-items: center;
+}
+
+nav.topclass .contact h5 {
+    font-family: Raleway-semibold;
 }
