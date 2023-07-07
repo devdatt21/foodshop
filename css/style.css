@@ -50,6 +50,7 @@
 
 body {
     -webkit-font-smoothing: antialising;
+    height: 400px;
 }
 
 .container {
@@ -198,10 +199,187 @@ header.hero {
     background-position: 0% 0%;
     background-repeat: no-repeat;
     overflow: hidden;
+    /* position: relative; */
+}
+
+header.hero .container {
+    position: relative;
 }
 
 header.hero .welcome span {
     color: #EEBF00;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 0.75rem;
+}
+
+header.hero h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+}
+
+header.hero h1 span {
+    color: var(--primary);
+}
+
+header.hero p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 50%;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3sec ease;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--heaven);
+}
+
+.btn-primary:hover {
+    background: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: var(--heaven);
+}
+
+.btn-secondary:hover {
+    background: var(--heaven);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+header.hero button:first-child {
+    margin-right: 0.50rem;
+}
+
+header.hero .hero-image {
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    margin-bottom: 0.75rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section.top-product {
+    background: var(--light);
+}
+
+.section-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.section-heading:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+
+section.top-product .food-slider .food-card {
+    background: var(--heaven);
+    padding: 1.5rem 0;
+    border-radius: 4px;
+}
+
+section.top-product .food-slider .food-card .product-image img {
+    width: 80%;
+    height: 200px;
+    padding-bottom: 1rem;
+    object-fit: contain;
+}
+
+hr {
+    border: 1px solid var(--light);
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+section.top-product .food-slider .food-card h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+section.top-product .food-slider .food-card .stars img {
+    margin-right: 0.25rem;
+    /* margin-bottom: ; */
+}
+
+section.top-product .food-slider .food-card .stars {
+    margin-bottom: 0.5rem;
+}
+
+section.top-product .food-slider .food-card .price {
+    color: var(--danger);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+section.top-product .food-slider .food-card button {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--secondary);
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    display: flex;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section.top-product .food-slider .food-card button:hover {
+    background: var(--primary);
+}
+
+.food-slider .food-card button img {
+    background: var(--primary);
+    padding: 0.50rem;
+    height: 32px;
+    margin-right: 1.2rem;
+}
+
+section.top-product .food-slider .food-card span {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.slick-slide {
+    margin: 0 27px;
+}
+
+.slick-list {
+    margin: 0 -27px;
 }
